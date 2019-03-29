@@ -1,1 +1,52 @@
 // Navigation code here
+header {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    background-color: whitesmoke;
+    max-width:800px;
+    width: 100%;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 4rem;
+        font-family: @font-stack;
+        text-align: center;
+        margin-bottom:2rem;
+    }
+
+    nav {
+        max-width: 800px;
+        display: flex;
+        justify-content: center;
+        font-family: @font-stack1;
+        margin-top: 1.25rem;
+        margin-bottom:0rem;
+    }
+
+        nav a {
+            font-size: 1.5rem;
+            color: black;
+            text-decoration: none;
+            font-style: bold;
+            margin-right: 2rem;
+            margin-left: 2rem;
+            font-family: @font-stack1;
+            padding-bottom: 1rem;
+        }
+
+            nav a:hover {
+                margin-right: 30px;
+                font-size: 15px;
+                color: black;
+                text-decoration: none;
+                font-style: bold;
+            }
+
+            nav a:first-child {
+                margin-left: 0;
+            }
+
+            nav a:last-child {
+                margin-right: 0;
+            }
+}
