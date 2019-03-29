@@ -38,15 +38,31 @@ header {
                 color: black;
                 text-decoration: none;
                 font-style: bold;
+                animation: smoke 2s linear forwards;
+                animation-delay: 0s
             }
 
-            nav a:first-child {
-                margin-left: 0;
-            }
+    @keyframes smoke {
+        0% {
+            transform: rotate(0deg) translateY(0px);
+            opacity: 1;
+            filter: blur(1px);
+        }
 
-            nav a:last-child {
-                margin-right: 0;
-            }
+        100% {
+            transform: rotate(45deg) translateY(-200px);
+            opacity: 0;
+            filter: blur(20px);
+        }
+    }
+
+    nav a:first-child {
+        margin-left: 0;
+    }
+
+    nav a:last-child {
+        margin-right: 0;
+    }
 }
 .navigation {
     background-color: whitesmoke;

@@ -8,6 +8,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.5/dat.gui.min.js"></script>
+    <script src="js/rocket.js"></script>
 
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -15,6 +18,9 @@
 </head>
 
 <body>
+    <div class="rocketfloat">
+        <canvas id="launchcontrol" width="300" height="1500"></canvas>
+    </div>
 
     <!-- navigation code here -->
     <header class="navigation">
@@ -75,7 +81,6 @@
         <footer>
             <p>Copyright SpaceWalkers 2018</p>
         </footer>
-
     </div>
 </body>
 </html>
