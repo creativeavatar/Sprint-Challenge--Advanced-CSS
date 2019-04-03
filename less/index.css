@@ -1,4 +1,4 @@
-﻿/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -324,8 +324,6 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .btn {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -377,8 +375,6 @@ footer {
     margin-bottom: 26px;
   }
   .home .walk .btn {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     display: flex;
     justify-content: center;

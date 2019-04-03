@@ -1,1 +1,40 @@
 // Mixins Here
+@font-stack: Russo One, "sans-serif";
+@font-stack1: Ubuntu, "sans-serif";
+@main-font-color: black;
+@header-font-color: black;
+@main-border-color:black;
+
+.center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-radius(@radius) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+
+.button-creator(@width, @height, @btn-bg-color, @font-color, @font-size) {
+    .border-radius(5px);
+    .center;
+    width: @width;
+    height: @height;
+    background-color: @btn-bg-color;
+    color: @font-color;
+    border: 1px solid @none;
+    cursor: pointer;
+    font-size: @font-size;
+    font-weight:bold;
+
+    @media @phone {
+        width: 100%;
+    }
+
+    &:hover {
+        background: @wild-sand;
+        color: @btn-bg-color;
+    }
+}
